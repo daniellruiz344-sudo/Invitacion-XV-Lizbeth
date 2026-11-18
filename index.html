@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efd5d6">
+  <title>Mis XV Años | Lizbeth Sarahí Ruiz Jurado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="invitation" aria-label="Invitación de XV años">
+    <section class="sheet active" data-sheet="0" aria-label="Portada">
+      <img src="assets/hoja-1.jpg" alt="Portada rosa palo y dorado: Mis XV Años, Lizbeth Sarahí Ruiz Jurado">
+    </section>
+    <section class="sheet" data-sheet="1" aria-label="Ceremonia religiosa">
+      <img src="assets/hoja-2.jpg" alt="Ceremonia religiosa en la Parroquia de San Miguel Arcángel, 18 de diciembre de 2026 a las 4:30 p. m.">
+      <a class="map-button church-map" href="https://maps.app.goo.gl/yd6VsmLJospTbGmu7" target="_blank" rel="noopener" aria-label="Ver ubicación de la iglesia en Google Maps">Ver ubicación de la iglesia</a>
+    </section>
+    <section class="sheet" data-sheet="2" aria-label="Recepción">
+      <img src="assets/hoja-3.jpg" alt="Recepción en el Salón de Fiestas Centenario y agradecimiento de la familia Ruiz Jurado">
+      <a class="map-button hall-map" href="https://maps.app.goo.gl/TpN6eNhoGkrhexCT9" target="_blank" rel="noopener" aria-label="Ver ubicación de la recepción en Google Maps">Ver ubicación de la recepción</a>
+    </section>
+  </main>
+
+  <audio id="backgroundMusic" src="assets/musica-xv.mp3" preload="auto" loop></audio>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Activar música" aria-pressed="false">♫ Activar música</button>
+
+  <div class="page-indicator" aria-live="polite"><span id="pageNumber">1</span><i></i>3</div>
+  <button class="float-nav prev" id="prev" aria-label="Hoja anterior" disabled>‹</button>
+  <button class="float-nav next" id="next" aria-label="Siguiente hoja">›</button>
+  <div class="dots" aria-label="Seleccionar hoja">
+    <button class="dot active" data-go="0" aria-label="Ir a la portada"></button>
+    <button class="dot" data-go="1" aria-label="Ir a ceremonia religiosa"></button>
+    <button class="dot" data-go="2" aria-label="Ir a recepción"></button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
